@@ -254,7 +254,7 @@ modelPredict_VS <- function(list_fpcaFit, list_cvfit, Xtest, Ztest, startT, tau)
 #'
 #' @examples
 #' library(reinforcedPred)
-#' set.seed(1)
+#' set.seed(3)
 #'
 #' # take the example training data (high dimensional Z) from the reinforcedPred package
 #' # see documentation for details about the data set train_data_mulZ
@@ -385,7 +385,7 @@ reinforced_VS <- function(Y, X, Z, budget, folds, startT, pve = 0.99, nbasis = 1
 
 #' Example training data (high dimensional Z)
 #'
-#' @format A data frame with 400 rows and 112 columns. The 1st column is the outcome variable Y, starting from the 2nd
+#' @format A data frame with 100 rows and 112 columns. The 1st column is the outcome variable Y, starting from the 2nd
 #' column to 62nd column is the longitudinal biomarker at 61 time grids, the 63rd column to 112nd column are other baseline covariate Z.
 #'
 #' @source A simulated data set
