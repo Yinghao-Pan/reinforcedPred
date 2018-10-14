@@ -222,7 +222,7 @@ modelPredict <- function(list_fpcaFit, list_paraEst, Xtest, Ztest, startT, tau) 
   final.label <- rep(NA, testn)
 
   for(i in 1:testn) {
-    cost[i] <- min(min(which(prediction[i, ] == 1)), min(which(prediction[i, ] == 0)))
+    cost[i] <- suppressWarnings(min(min(which(prediction[i, ] == 1)), min(which(prediction[i, ] == 0))))
     final.label[i] <- prediction[i, cost[i]]
   }
 
