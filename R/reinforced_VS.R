@@ -254,7 +254,7 @@ modelPredict_VS <- function(list_fpcaFit, list_cvfit, Xtest, Ztest, startT, tau)
 #'
 #' @examples
 #' library(reinforcedPred)
-#' set.seed(3)
+#' set.seed(1)
 #'
 #' # take the example training data (high dimensional Z) from the reinforcedPred package
 #' # see documentation for details about the data set train_data_mulZ
@@ -325,7 +325,7 @@ reinforced_VS <- function(Y, X, Z, budget, folds, startT, pve = 0.99, nbasis = 1
   }
 
   # we search over a sequence of tau values #
-  tau.sequence <- seq(0, 3, 0.02)
+  tau.sequence <- seq(0, 3, 0.03)
 
   # record the misclassification error and the cost, each row is for fixed fold with different taus #
   error.matrix <- matrix(NA, nrow = folds, ncol = length(tau.sequence))
@@ -393,7 +393,7 @@ reinforced_VS <- function(Y, X, Z, budget, folds, startT, pve = 0.99, nbasis = 1
 
 #' Example test data (high dimensional Z)
 #'
-#' @format A data frame with 2500 rows and 112 columns. The 1st column is the outcome variable Y, starting from the 2nd
+#' @format A data frame with 2000 rows and 112 columns. The 1st column is the outcome variable Y, starting from the 2nd
 #' column to 62nd column is the longitudinal biomarker at 61 time grids, the 63rd column to 112nd column are other baseline covariate Z.
 #'
 #' @source A simulated data set

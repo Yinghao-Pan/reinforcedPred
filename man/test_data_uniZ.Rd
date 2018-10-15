@@ -4,7 +4,7 @@
 \name{test_data_uniZ}
 \alias{test_data_uniZ}
 \title{Example test data (univariate Z)}
-\format{A data frame with 5000 rows and 63 columns. The 1st column is the outcome variable Y, starting from the 2nd
+\format{A data frame with 2000 rows and 63 columns. The 1st column is the outcome variable Y, starting from the 2nd
 column to 62nd column is the longitudinal biomarker at 61 time grids, the 63rd column is other baseline covariate Z.}
 \source{
 A simulated data set

@@ -51,7 +51,7 @@ train_data_uniZ <- data.frame(Y = Y, tildeX.missing = tildeX.missing, Z = Z)
 
 set.seed(1)
 
-testn <- 5000                              # number of subjects in test data
+testn <- 2000                              # number of subjects in test data
 
 ldings <- matrix(rnorm(testn * K), nrow = testn) %*% sqrt(diag(lambda))
 

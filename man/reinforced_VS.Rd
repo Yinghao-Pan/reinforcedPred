@@ -42,7 +42,7 @@ covariates are of high-dimension.
 }
 \examples{
 library(reinforcedPred)
-set.seed(3)
+set.seed(1)
 
 # take the example training data (high dimensional Z) from the reinforcedPred package
 # see documentation for details about the data set train_data_mulZ

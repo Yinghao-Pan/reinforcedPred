@@ -7,9 +7,11 @@
 
 There were no ERRORs or WARNINGs. 
 
-There was 1 NOTE:
+There were 3 NOTEs:
 
-* This is a new submission. 
+* This is a new submission.
+* running examples for arch 'i386' ..., examples with CPU or elapsed time > 10s
+* running examples for arch 'x64' ..., examples with CPU or elapsed time > 10s
 
 ## Downstream dependencies
 

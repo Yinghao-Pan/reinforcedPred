@@ -58,7 +58,7 @@ train_data_mulZ <- data.frame(Y = Y, tildeX.missing = tildeX.missing, Z = Z)
 
 set.seed(1)
 
-testn <- 2500                              # number of subjects
+testn <- 2000                              # number of subjects
 
 ldings <- matrix(rnorm(testn * K), nrow = testn) %*% sqrt(diag(lambda))
 

@@ -331,7 +331,7 @@ reinforced <- function(Y, X, Z, budget, folds, startT, link, pve = 0.99, nbasis 
   }
 
   # we search over a sequence of tau values #
-  tau.sequence <- seq(0, 3, 0.02)
+  tau.sequence <- seq(0, 3, 0.03)
 
   # record the misclassification error and the cost, each row is for fixed fold with different taus #
   error.matrix <- matrix(NA, nrow = folds, ncol = length(tau.sequence))
@@ -400,7 +400,7 @@ reinforced <- function(Y, X, Z, budget, folds, startT, link, pve = 0.99, nbasis 
 
 #' Example test data (univariate Z)
 #'
-#' @format A data frame with 5000 rows and 63 columns. The 1st column is the outcome variable Y, starting from the 2nd
+#' @format A data frame with 2000 rows and 63 columns. The 1st column is the outcome variable Y, starting from the 2nd
 #' column to 62nd column is the longitudinal biomarker at 61 time grids, the 63rd column is other baseline covariate Z.
 #'
 #' @source A simulated data set
