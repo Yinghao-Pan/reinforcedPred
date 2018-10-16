@@ -2,7 +2,7 @@
 
 set.seed(1)
 
-n <- 100                                    # number of subjects
+n <- 400                                    # number of subjects
 nTotal <- 61                                # number of total time grid
 ptsAll <- seq(0, 1, length = nTotal)        # time grid
 

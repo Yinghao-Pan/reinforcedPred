@@ -34,6 +34,7 @@ then startT = 25 means that the first prediction is made at \eqn{t = 24/60}.}
 of the functional generalized linear model at each time grid.
 }
 \examples{
+\dontrun{
 library(reinforcedPred)
 
 # take the example training data (univariate Z) from the reinforcedPred package
@@ -52,4 +53,5 @@ result <- modelFit(Y, tildeX.missing, Z, startT, link, pve = 0.99, nbasis = 10, 
 # obtained parameter estimates and FPCA decompositions
 list_paraEst <- result$list_paraEst
 list_fpcaFit <- result$list_fpcaFit
+}
 }

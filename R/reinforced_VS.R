@@ -22,6 +22,7 @@
 #' \item{list_cvfit}{Elastic net logistic regression at each time grid from startT to the end.}
 #'
 #' @examples
+#' \dontrun{
 #' library(reinforcedPred)
 #'
 #' # take the example training data (high dimensional Z) from the reinforcedPred package
@@ -39,6 +40,7 @@
 #' # obtained elastic net logistic regression fit and FPCA decompositions
 #' list_cvfit <- result$list_cvfit
 #' list_fpcaFit <- result$list_fpcaFit
+#' }
 
 
 modelFit_VS <- function(Y, X, Z, startT, pve, nbasis, weight) {
@@ -253,6 +255,7 @@ modelPredict_VS <- function(list_fpcaFit, list_cvfit, Xtest, Ztest, startT, tau)
 #' \item{final.tau}{The optimal \eqn{\tau} that minimizes the misclassification error under the budget constraint.}
 #'
 #' @examples
+#' \dontrun{
 #' library(reinforcedPred)
 #' set.seed(1)
 #'
@@ -293,6 +296,7 @@ modelPredict_VS <- function(list_fpcaFit, list_cvfit, Xtest, Ztest, startT, tau)
 #'
 #' # the average cost when we applied the prediction procedure to the test data
 #' pred$avg.cost
+#' }
 
 
 reinforced_VS <- function(Y, X, Z, budget, folds, startT, pve = 0.99, nbasis = 10, weight) {
@@ -325,7 +329,7 @@ reinforced_VS <- function(Y, X, Z, budget, folds, startT, pve = 0.99, nbasis = 1
   }
 
   # we search over a sequence of tau values #
-  tau.sequence <- seq(0, 3, 0.03)
+  tau.sequence <- seq(0, 3, 0.02)
 
   # record the misclassification error and the cost, each row is for fixed fold with different taus #
   error.matrix <- matrix(NA, nrow = folds, ncol = length(tau.sequence))
@@ -385,7 +389,7 @@ reinforced_VS <- function(Y, X, Z, budget, folds, startT, pve = 0.99, nbasis = 1
 
 #' Example training data (high dimensional Z)
 #'
-#' @format A data frame with 100 rows and 112 columns. The 1st column is the outcome variable Y, starting from the 2nd
+#' @format A data frame with 400 rows and 112 columns. The 1st column is the outcome variable Y, starting from the 2nd
 #' column to 62nd column is the longitudinal biomarker at 61 time grids, the 63rd column to 112nd column are other baseline covariate Z.
 #'
 #' @source A simulated data set

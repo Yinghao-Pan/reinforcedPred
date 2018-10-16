@@ -41,6 +41,7 @@ misclassification error is minimized under a certain budget constraint. This fun
 covariates are of high-dimension.
 }
 \examples{
+\dontrun{
 library(reinforcedPred)
 set.seed(1)
 
@@ -81,4 +82,5 @@ mis.error
 
 # the average cost when we applied the prediction procedure to the test data
 pred$avg.cost
+}
 }

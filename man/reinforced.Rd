@@ -42,6 +42,7 @@ weighting method to calculate a weight. See details in section 3.4 of the manusc
 misclassification error is minimized under a certain budget constraint.
 }
 \examples{
+\dontrun{
 library(reinforcedPred)
 set.seed(1)
 
@@ -83,4 +84,5 @@ mis.error
 
 # the average cost when we applied the prediction procedure to the test data
 pred$avg.cost
+}
 }

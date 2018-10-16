@@ -23,6 +23,7 @@
 #' \item{list_paraEst}{Parameter estimates at each time grid from startT to the end.}
 #'
 #' @examples
+#' \dontrun{
 #' library(reinforcedPred)
 #'
 #' # take the example training data (univariate Z) from the reinforcedPred package
@@ -41,6 +42,7 @@
 #' # obtained parameter estimates and FPCA decompositions
 #' list_paraEst <- result$list_paraEst
 #' list_fpcaFit <- result$list_fpcaFit
+#' }
 
 
 modelFit <- function(Y, X, Z, startT, link, pve, nbasis, weight) {
@@ -258,6 +260,7 @@ modelPredict <- function(list_fpcaFit, list_paraEst, Xtest, Ztest, startT, tau) 
 #' \item{final.tau}{The optimal \eqn{\tau} that minimizes the misclassification error under the budget constraint.}
 #'
 #' @examples
+#' \dontrun{
 #' library(reinforcedPred)
 #' set.seed(1)
 #'
@@ -299,6 +302,7 @@ modelPredict <- function(list_fpcaFit, list_paraEst, Xtest, Ztest, startT, tau) 
 #'
 #' # the average cost when we applied the prediction procedure to the test data
 #' pred$avg.cost
+#' }
 
 
 reinforced <- function(Y, X, Z, budget, folds, startT, link, pve = 0.99, nbasis = 10, weight) {
@@ -331,7 +335,7 @@ reinforced <- function(Y, X, Z, budget, folds, startT, link, pve = 0.99, nbasis 
   }
 
   # we search over a sequence of tau values #
-  tau.sequence <- seq(0, 3, 0.03)
+  tau.sequence <- seq(0, 3, 0.02)
 
   # record the misclassification error and the cost, each row is for fixed fold with different taus #
   error.matrix <- matrix(NA, nrow = folds, ncol = length(tau.sequence))
