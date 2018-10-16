@@ -5,3 +5,5 @@
 ^\.Rproj\.user$
 ^README-.*\.png$
 ^cran-comments\.md$
+^README\.md$
+^NEWS\.md$
