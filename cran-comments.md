@@ -12,7 +12,7 @@ these examples in donttest{}. I tested these examples using devtools::check(run_
 ## Test environments 
 
 * local OS X install, R 3.5.1
-* win-builder (release)
+* win-builder (release and devel)
 
 ## R CMD check results
 
