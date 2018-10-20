@@ -41,7 +41,7 @@ misclassification error is minimized under a certain budget constraint. This fun
 covariates are of high-dimension.
 }
 \examples{
-\dontrun{
+\donttest{
 library(reinforcedPred)
 set.seed(1)
 

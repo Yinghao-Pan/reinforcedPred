@@ -22,7 +22,7 @@
 #' \item{list_cvfit}{Elastic net logistic regression at each time grid from startT to the end.}
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' library(reinforcedPred)
 #'
 #' # take the example training data (high dimensional Z) from the reinforcedPred package
@@ -255,7 +255,7 @@ modelPredict_VS <- function(list_fpcaFit, list_cvfit, Xtest, Ztest, startT, tau)
 #' \item{final.tau}{The optimal \eqn{\tau} that minimizes the misclassification error under the budget constraint.}
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' library(reinforcedPred)
 #' set.seed(1)
 #'

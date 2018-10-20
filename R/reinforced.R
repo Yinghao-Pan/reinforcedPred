@@ -23,7 +23,6 @@
 #' \item{list_paraEst}{Parameter estimates at each time grid from startT to the end.}
 #'
 #' @examples
-#' \dontrun{
 #' library(reinforcedPred)
 #'
 #' # take the example training data (univariate Z) from the reinforcedPred package
@@ -33,7 +32,7 @@
 #' Z <- as.numeric(train_data_uniZ$Z)
 #'
 #' # analysis starts
-#' startT <- 25
+#' startT <- 55
 #' link <- "probit"
 #' weight <- rep(1, length(Y))
 #'
@@ -42,7 +41,7 @@
 #' # obtained parameter estimates and FPCA decompositions
 #' list_paraEst <- result$list_paraEst
 #' list_fpcaFit <- result$list_fpcaFit
-#' }
+#'
 
 
 modelFit <- function(Y, X, Z, startT, link, pve, nbasis, weight) {
@@ -260,7 +259,7 @@ modelPredict <- function(list_fpcaFit, list_paraEst, Xtest, Ztest, startT, tau) 
 #' \item{final.tau}{The optimal \eqn{\tau} that minimizes the misclassification error under the budget constraint.}
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' library(reinforcedPred)
 #' set.seed(1)
 #'

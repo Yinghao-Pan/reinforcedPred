@@ -32,7 +32,7 @@ then startT = 25 means that the first prediction is made at \eqn{t = 24/60}.}
 at each time grid. This function is used when the baseline covariates Z are high-dimensional.
 }
 \examples{
-\dontrun{
+\donttest{
 library(reinforcedPred)
 
 # take the example training data (high dimensional Z) from the reinforcedPred package

@@ -21,7 +21,10 @@ Description: Traditional risk prediction only utilizes baseline factors known
     statistical procedure that recursively incorporates comprehensive 
     longitudinal information into the risk prediction model, taking into 
     account the cost of delaying the decision to a follow-up time when more 
-    information is available. 
+    information is available. The statistical methods are described in the 
+    following paper: Pan, Y., Laber, E., Smith, M., Zhao, Y. (2018). Reinforced 
+    risk prediction with budget constraint: application to electronic health 
+    records data. Manuscript submitted for publication. 
 Depends: R (>= 3.5.0)
 License: GPL (>= 2)
 Encoding: UTF-8

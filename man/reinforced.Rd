@@ -42,7 +42,7 @@ weighting method to calculate a weight. See details in section 3.4 of the manusc
 misclassification error is minimized under a certain budget constraint.
 }
 \examples{
-\dontrun{
+\donttest{
 library(reinforcedPred)
 set.seed(1)
 
