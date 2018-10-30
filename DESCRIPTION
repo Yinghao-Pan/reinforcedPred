@@ -1,7 +1,7 @@
 Package: reinforcedPred
 Type: Package
 Title: Reinforced Risk Prediction with Budget Constraint
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: c(person("Yinghao", "Pan", role = c("aut", "cre"),
                      email = "ypan8@uncc.edu"),
              person("Yingqi", "Zhao", role = "aut"),
